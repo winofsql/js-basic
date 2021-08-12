@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta content="width=device-width,initial-scale=1.0,minimum-scale=1.0,maximum-scale=1.0,user-scalable=no" name="viewport">
+<meta charset="utf-8">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/5.0.1/css/bootstrap.min.css">
+
+
+</head>
+<body>
+<script>
+
+// 関数( メソッド ) 
+function lang_test() {
+
+	// 変数作成
+	var work;
+
+	// この時点では文字列
+	work = document.getElementById("fld").value;
+
+	// 整数に変換
+	work = parseInt(work);
+
+	if ( isNaN( work ) ) {
+		alert("変換できません");
+		return;
+	}
+
+	// 整数同士で比較
+	if ( work < 1  ) {
+		alert("★条件に一致します");
+	}
+	else {
+		alert("条件に一致しません　0以下を入力してください");
+	}
+
+}
+
+
+</script>
+<h3 class="alert alert-primary">parseInt</h3>
+<div id="base" class="m-4">
+
+<input id="fld" name="fld" type="text" value="" class="me-3">
+<input id="btn" name="btn" type="button" value="実行" onclick="lang_test();"></body>
+
+</body>
+</html>
