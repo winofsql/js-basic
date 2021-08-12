@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta content="width=device-width,initial-scale=1.0,minimum-scale=1.0,maximum-scale=1.0,user-scalable=no" name="viewport">
+<meta charset="utf-8">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/5.0.1/css/bootstrap.min.css">
+
+</head>
+<body>
+<script>
+
+// 関数( メソッド ) 
+function lang_test() {
+
+    // 変数作成
+    var work;
+
+    work = document.getElementById("fld").value;
+
+    if ( work == "1"  ) {
+        alert( work + " : 一致しました" );
+    }
+    else {
+        alert("一致しません。　1を入力してください");
+    }
+
+}
+
+</script>
+<h3 class="alert alert-primary">getElementById</h3>
+<div id="base" class="m-4">
+
+<input id="fld" name="fld" type="text" value="" class="me-3">
+<input id="btn" name="btn" type="button" value="実行" onclick="lang_test();">
+
+</body>
+</html>
