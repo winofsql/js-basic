@@ -15,24 +15,42 @@ function lang_test() {
     // 変数作成
     var work;
 
+    console.log( typeof(work) );
+
+    // この時点では文字列
     work = document.getElementById("fld").value;
 
-    if ( work == "1"  ) {
-        alert( work + " : 一致しました" );
+    console.log( typeof(work) );
+
+    // 整数に変換
+    work = parseInt(work);
+
+    console.log( typeof(work) );
+
+    if ( isNaN( work ) ) {
+        alert("変換できません");
+        return;
+    }
+
+    // 整数同士で比較
+    if ( work < 1  ) {
+        alert("★条件に一致します");
     }
     else {
-        alert("一致しません。　1を入力してください");
+        alert("条件に一致しません　0以下を入力してください");
     }
 
 }
 
+
 </script>
-<h3 class="alert alert-primary">getElementById</h3>
+<h3 class="alert alert-primary">typeof : console で確認</h3>
 <div id="base" class="m-4">
 
     <input id="fld" name="fld" type="text" value="" class="me-3">
     <input id="btn" name="btn" type="button" value="実行" onclick="lang_test();">
 
 </div>
+
 </body>
 </html>
