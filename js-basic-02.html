@@ -13,27 +13,27 @@
 // 関数( メソッド ) 
 function lang_test() {
 
-	// 変数作成
-	var work;
+    // 変数作成
+    var work;
 
-	// この時点では文字列
-	work = document.getElementById("fld").value;
+    // この時点では文字列
+    work = document.getElementById("fld").value;
 
-	// 整数に変換
-	work = parseInt(work);
+    // 整数に変換
+    work = parseInt(work);
 
-	if ( isNaN( work ) ) {
-		alert("変換できません");
-		return;
-	}
+    if ( isNaN( work ) ) {
+        alert("変換できません");
+        return;
+    }
 
-	// 整数同士で比較
-	if ( work < 1  ) {
-		alert("★条件に一致します");
-	}
-	else {
-		alert("条件に一致しません　0以下を入力してください");
-	}
+    // 整数同士で比較
+    if ( work < 1  ) {
+        alert("★条件に一致します");
+    }
+    else {
+        alert("条件に一致しません　0以下を入力してください");
+    }
 
 }
 
