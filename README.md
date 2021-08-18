@@ -21,7 +21,7 @@ function lang_test() {
 ```
 ## js-basic-02
 ![image](https://user-images.githubusercontent.com/1501327/129836343-14af3fd3-d653-4908-b745-157915bfb0f4.png)
-```javascipt
+```javascript
 function lang_test() {
 
     // 変数作成
