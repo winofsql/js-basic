@@ -1,6 +1,6 @@
 # js-basic
 JavaScript のみの基本的な処理
-## getElementById
+## s-basic-01
 ![image](https://user-images.githubusercontent.com/1501327/129836056-bb8bca7d-0681-481e-82d7-85440e01dac7.png)
 ```javascript
 function lang_test() {
