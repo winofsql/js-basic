@@ -48,6 +48,40 @@ function lang_test() {
 
 }
 ```
-## 03
-typeof
+## js-basic-03
+![image](https://user-images.githubusercontent.com/1501327/129836483-9b70c984-4d01-4341-abdb-26ecaefcf08d.png)
+```javascript
+function lang_test() {
+
+    // 変数作成
+    var work;
+
+    console.log( typeof(work) );
+
+    // この時点では文字列
+    work = document.getElementById("fld").value;
+
+    console.log( typeof(work) );
+
+    // 整数に変換
+    work = parseInt(work);
+
+    console.log( typeof(work) );
+
+    if ( isNaN( work ) ) {
+        alert("変換できません");
+        return;
+    }
+
+    // 整数同士で比較
+    if ( work < 1  ) {
+        alert("★条件に一致します");
+    }
+    else {
+        alert("条件に一致しません　0以下を入力してください");
+    }
+
+}
+```
+
 
